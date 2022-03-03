@@ -1,20 +1,34 @@
-.trafficTop {
-    text-align: center;
+.palo {
+    background-color: black;
+    width: 10px;
+    height: 100px;
+    margin-left: 55px;
 }
 
-.container {
-   
-    font-size: 60px;
-    color: white;
+.Semaforo {
     background: black;
-    display: inline-block;
-    line-height: 60px;
     padding: 10px;
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
 .green {
     background-color: green;
 }
 .greenOff {
+    background-color: blueviolet;
+}
+.yellow {
+    background-color: yellow;
+}
+.yellowOff {
+    background-color: blueviolet;
+}
+.red {
+    background-color: red;
+}
+.redOff {
     background-color: blueviolet;
 }

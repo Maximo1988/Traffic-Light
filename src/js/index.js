@@ -13,32 +13,41 @@ const TrafficLight = () => {
 	const [traffic1, setTraffic1] = useState("yellow");
 	const [traffic2, setTraffic2] = useState("red");
 	return (
-		<div className="container-fluid text-center mt-3" width="250px">
+		<div>
+			<div className="palo"></div>
 			<div
-				className={`rounded-circle align-self-start ${traffic0}`}
-				onClick={() => setTraffic0("greenOff")}
-				style={{
-					width: "100px",
-					height: "100px",
-				}}></div>
+				className="Semaforo container-fluid items-center"
+				width="250px">
+				<div
+					className={
+						"green rounded-circle align-items-start ${traffic0}"
+					}
+					onClick={() => setTraffic0("greenOff")}
+					style={{
+						width: "100px",
+						height: "100px",
+					}}></div>
 
-			<div
-				className="yellow rounded-circle d-flex align-items-center "
-				onClick={() => setTraffic1("yellow - off")}
-				style={{
-					background: "yellow",
-					width: "100px",
-					height: "100px",
-				}}></div>
+				<div
+					className={
+						"yellow rounded-circle d-flex align-items-center ${traffic1}"
+					}
+					onClick={() => setTraffic1("yellowOff")}
+					style={{
+						width: "100px",
+						height: "100px",
+					}}></div>
 
-			<div
-				className="red rounded-circle d-flex align-items-end justify-content-end"
-				onClick={() => setTraffic2("red - off")}
-				style={{
-					background: "red",
-					width: "100px",
-					height: "100px",
-				}}></div>
+				<div
+					className={
+						"red rounded-circle d-flex align-items-end justify-content-end ${traffic2}"
+					}
+					onClick={() => setTraffic2("redOff")}
+					style={{
+						width: "100px",
+						height: "100px",
+					}}></div>
+			</div>
 		</div>
 	);
 };
