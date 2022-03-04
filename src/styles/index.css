@@ -1,4 +1,4 @@
-.palo {
+.cable {
     background-color: black;
     width: 10px;
     height: 100px;
@@ -28,6 +28,12 @@
 }
 .red {
     background-color: red;
+    margin-top: 10px;
+    width: 100px;
+	height: 100px;
+}
+.glow {
+    box-shadow: 10px 0 5px -2px #888;
     margin-top: 10px;
     width: 100px;
 	height: 100px;

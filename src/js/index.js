@@ -9,32 +9,29 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 const TrafficLight = () => {
-	const [color, setColor] = useState("brillo");
+	const [color, setColor] = useState("red");
 
 	return (
 		<div>
-			<div className="palo"></div>
+			<div className="cable"></div>
 			<div className="Semaforo container mt-0">
 				<div
 					className={
-						'green rounded-circle align-items-start + ${color === "green" ? "brillo" : ""}'
+						'green rounded-circle align-items-start + {color === "green" ? "glow" : ""}'
 					}
-					onClick={() => setColor("green")}
-					style={}></div>
+					onClick={() => setColor("green")}></div>
 
 				<div
 					className={
-						'yellow rounded-circle d-flex align-items-center + ${color === "yellow" ? "brillo" : ""}'
+						'yellow rounded-circle d-flex align-items-center + {color === "yellow" ? "glow" : ""}'
 					}
-					onClick={() => setColor("yellow")}
-					style={}></div>
+					onClick={() => setColor("yellow")}></div>
 
 				<div
 					className={
-						'red rounded-circle d-flex align-items-end justify-content-end + ${color === "red" ? "brillo" : ""}'
+						'red rounded-circle d-flex align-items-end + {color === "red" ? "glow" : ""}'
 					}
-					onClick={() => setColor("red")}
-					style={}></div>
+					onClick={() => setColor("red")}></div>
 			</div>
 		</div>
 	);
