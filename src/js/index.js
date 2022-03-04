@@ -9,44 +9,32 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 const TrafficLight = () => {
-	const [traffic0, setTraffic0] = useState("green");
-	const [traffic1, setTraffic1] = useState("yellow");
-	const [traffic2, setTraffic2] = useState("red");
+	const [color, setColor] = useState("brillo");
+
 	return (
 		<div>
 			<div className="palo"></div>
-			<div
-				className="Semaforo container-fluid items-center"
-				width="250px">
+			<div className="Semaforo container mt-0">
 				<div
 					className={
-						"green rounded-circle align-items-start ${traffic0}"
+						'green rounded-circle align-items-start + ${color === "green" ? "brillo" : ""}'
 					}
-					onClick={() => setTraffic0("greenOff")}
-					style={{
-						width: "100px",
-						height: "100px",
-					}}></div>
+					onClick={() => setColor("green")}
+					style={}></div>
 
 				<div
 					className={
-						"yellow rounded-circle d-flex align-items-center ${traffic1}"
+						'yellow rounded-circle d-flex align-items-center + ${color === "yellow" ? "brillo" : ""}'
 					}
-					onClick={() => setTraffic1("yellowOff")}
-					style={{
-						width: "100px",
-						height: "100px",
-					}}></div>
+					onClick={() => setColor("yellow")}
+					style={}></div>
 
 				<div
 					className={
-						"red rounded-circle d-flex align-items-end justify-content-end ${traffic2}"
+						'red rounded-circle d-flex align-items-end justify-content-end + ${color === "red" ? "brillo" : ""}'
 					}
-					onClick={() => setTraffic2("redOff")}
-					style={{
-						width: "100px",
-						height: "100px",
-					}}></div>
+					onClick={() => setColor("red")}
+					style={}></div>
 			</div>
 		</div>
 	);

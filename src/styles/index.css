@@ -2,9 +2,8 @@
     background-color: black;
     width: 10px;
     height: 100px;
-    margin-left: 55px;
+    margin-left: 695px;
 }
-
 .Semaforo {
     background: black;
     padding: 10px;
@@ -12,23 +11,24 @@
     display: inline-block;
     align-items: center;
     justify-content: center;
+    margin-left: 40rem;
+    max-width: fit-content;
 }
-
 .green {
     background-color: green;
-}
-.greenOff {
-    background-color: blueviolet;
+    width: 100px;
+	height: 100px;
+    
 }
 .yellow {
     background-color: yellow;
-}
-.yellowOff {
-    background-color: blueviolet;
+    margin-top: 10px;
+    width: 100px;
+	height: 100px;
 }
 .red {
     background-color: red;
-}
-.redOff {
-    background-color: blueviolet;
+    margin-top: 10px;
+    width: 100px;
+	height: 100px;
 }
